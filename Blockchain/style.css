@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Ibarra+Real+Nova&family=Josefin+Sans:wght@100&family=Josefin+Slab:wght@100&family=Lobster&display=swap');
+img {
+    /* border: 2px solid red; */
+    width : 200px;
+    height : 100px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0px;
+    font-size: 20px;
+}
+.headlist{
+    /* border: 2px solid red; */
+    width: 600px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.nav-links li {
+    list-style-type: none;
+}
+.nav-links li a::after {
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #005E06;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+
+}
+.nav-links li a {
+    text-decoration: none;
+    color: green;
+}
+#background {
+    justify-content: space-between;
+    margin-top:auto;
+    padding: 50px;
+    background-image: url(bblooc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+}
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1100px;
+}
+nav .fa {
+    display: none;
+} 
+.flexbox-container-1 {
+    background: #ffffff;
+    padding: 30px;
+    text-align: center;
+    color: #255225;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.flex {
+    margin-top: -60px;
+}
+.serve-page p {
+    font-weight: bold;
+    font-size: larger;
+}
+.serve-page img {
+    width: 80px;
+    height: 60px;
+    padding-top: 10px;
+}
+.service h3 {
+    font-size: 40px;
+    color: #005E06;
+    text-align: center;
+}
+
+.server {
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center; 
+    justify-content: space-between;
+} 
+
+.servver {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serve-page {
+    color: white;
+    width: 200px;
+    height: 150px;
+    background:  #005E06;
+    margin: 5px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 25px 25px 20px rgb(41, 40, 40);
+    box-shadow: inset -15px -10px 20px rgb(51, 49, 49) ;
+}
+
+.partners {
+    background:  #005E06;
+    justify-content: space-around;
+    margin-bottom: auto; 
+    padding-bottom: 40px; 
+    color: white;
+}
+
+.partners img {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 10px;
+}
+
+.partners h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+
+}
+
+.About{
+    background: white;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.flexbox-container{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.flexbox-item h3 {
+    padding-top: 10px; 
+}
+
+.flexbox-item {
+    margin: 20px;
+    border-radius: 20px;
+    height: 300px;
+    width: 1000px;
+    padding: 30px;
+    background: #ccffcc;
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.1);
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin-left: 100px;
+    word-spacing: 10px;
+    /* border: 2px solid red; */
+    }
+
+
+.pics {
+    padding-bottom: 20px;   
+    background: white;
+}
+
+.photo {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.pictures h3{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(33, 94, 33);
+    padding-top: 30px;
+
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.photo img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 0;
+    box-shadow: 0 32px 75px rgba(68, 77, 136,0.2);
+    
+}
+
+.full-photo {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-photo img {
+    width: 60%;
+    height: 450px;
+}
+.full-photo span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.team{
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+
+.wrapper {
+    margin: 70px; 
+    margin-top: 10px;
+}
+.team-member ul li {
+    list-style-type: none;
+    display: inline-flex;
+}
+.team-member ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+.teem .team-member h3 {
+    margin-top: 130px;
+    color: white;
+    text-align: center;
+}
+
+    
+
+.wrapper h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: rgb(31, 83, 31);
+
+}
+.teem{
+    display: flex;
+    align-items: center;
+    width: auto;
+    text-align: center;
+
+    
+
+}
+
+.teem .team-member {
+    background-color: #005E06;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 350px;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.teem .team-member .team-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX( -80%);
+
+    
+}
+.team-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgb(245, 241, 241);
+    padding: 10px;
+    object-fit: cover;
+    /* background-color: black; */
+
+    
+    
+
+}
+
+.team-member p{
+    color: white;
+}
+
+.more {
+    background:  #005E06;;
+    padding-top: 40px;
+    color: rgb(233, 240, 233);
+    padding-bottom: 10px;
+    margin-bottom: 100;
+    line-height: 20px;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+}
+
+.formation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 20px;
+}
+.info {
+    text-align: justify;
+    padding-top: 10px;
+    
+}
+.socials {
+    /* border: 2px solid red; */
+}
+
+.socials ul li a i {
+    justify-content: space-around;
+    width: 20px;
+    
+    /* border: 2px solid red; */
+
+}
+.socials ul li a i{
+    justify-content: space-between;
+}
+.holde{
+    width: 500px;
+    height: 400px;
+    background: rgb(245, 241, 241);
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px rgb(90, 233, 121);
+    color: green;
+
+}
+input {
+    display: inline-block;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+
+button {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    margin-bottom: 200px;
+    background:rgb(31, 119, 46);
+    color: white;
+}
+
+button:hover {
+    background: white;
+    color: #005E06;
+}
+
+.about{
+    background-image: url(blocc.jpg);
+}
+footer {
+    background: linear-gradient(to bottom, rgba(230, 231, 231, 0.89), rgba(36, 141, 59, 0.815));
+}
+
+.foot {
+    color: #005E06;;
+    justify-content: space-around;
+    /* margin-left: 100px; */
+    line-height: 30px;
+    display: flex;
+    /* text-align: ; */
+}
+
+.foot ul li {
+    list-style-type: none;
+
+}
+.foot ul {
+    padding-left: 0px;
+}
+
+.foot ul li a {
+    text-decoration:  none;
+    color: #005E06;
+}
+
+.bcunn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #005E06;
+    padding: auto 20px auto 20px;
+    height: 40px;
+    color: white;
+}
+.bcunn h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 420px){
+   
+    nav{
+        width: 340px;
+        align-items: center;
+    }
+    .nav-links{
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 20px;
+
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .headlist{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: white;
+        height: 200px;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav ul li a{
+        overflow: hidden;
+        display: block;
+    }
+    nav .fa {
+        display: inline-block;
+        color: #005E06;
+        margin: 10px;
+        font-size: 15px;
+        cursor: pointer;
+   
+    }
+    .nav-links ul {
+        padding: 40px;
+    }
+    nav a img {
+        width: 40vw;
+        height: 8vh;
+        margin: 5px;
+        /* border: 2px solid red; */
+    }
+    .flexbox-item{
+        width: 300px;
+        height: 300px; 
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    .About {
+        font-size: 15px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .partners h3{
+        font-size: 20px;
+    }
+    .partners img{
+        align-items: flex-start;
+        width: 35vw;
+        height: 8vh;
+    }
+    .service h3 {
+        font-size: 20px;
+        color: #005E06;
+        text-align: center;
+    }
+    .server {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .servver {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .serve-page{
+        width: 30vw;
+        height: 16vh;
+    }
+    .serve-page img {
+        width: 15vw;
+        height: 6vh;
+    }
+    .serve-page p{
+        font-size: 13px;
+    }
+    .wrapper h1 {
+        font-size: 25px;
+    }
+    .teem .team-member {
+        background-color: #005E06;
+        margin: 5px;
+        margin-bottom: 50px;
+        width: 70vw;
+        padding: 20px;
+        height: 40vh;
+        position: relative;
+        border-radius: 10px;
+        text-align: center;
+
+        /* border: 2px solid red; */
+    }
+    .teem {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        margin: 0px;
+    }
+    .team-image img {
+        width: 35vw;
+        height: 22vh;
+        justify-content: center;
+    }
+    .team-member h3 {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        margin: 0 5vw;
+    }
+    .teem .team-member h3 {
+        margin-top: 110px;
+        color: white;
+        text-align: center;
+    }
+    
+    .pictures h3{
+        font-size: 25px;
+    } 
+    .more h2 {
+        font-size: 20px;
+    }  
+    .formation {
+        display: flex;
+        flex-direction: column;
+    }
+    .holde {
+        width: 70vw;
+        height: 50vh;
+        background: rgb(245, 241, 241);
+        border-radius: 20px;
+        box-shadow: -10px 10px 10px rgb(90, 233, 121);
+        color: green;
+    }
+    .holde h3{
+        font-size: 15px;
+    }
+    .holde input {
+        font-size: 12px;
+    }
+    .holde button {
+        font-size: 15px;
+    }
+    .info h3{
+        font-size: 15px;
+
+    }
+    .box {
+        width: 70vw;
+        height: 60vh;
+    }
+    .bcunn h3{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        height: 6vh;
+        /* border: 2px solid red; */
+
+    }
+    .full-photo img {
+        width: 80vw;
+        height: 50vh;
+        margin: 0px; 
+    }
+    .full-photo span {
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .foot {
+        color: #005E06;        
+        line-height: 30px;
+        display: inline-block;
+        padding: 20px;
+    }
+    
+    .foot ul li {
+        font-size: 14px;
+    }
+    .foot h3 {
+        font-size: 15px;
+    }
+    
+    .bcunn{
+        display: inline-block;
+        justify-content: space-betwee;
+        background-color: #005E06;
+        padding: 0 20px 0 20px;
+        height: 200px;
+        width: 90%;
+        color: white;
+        /* border: 2px solid red; */
+    
+    
+    }
+    
+}
